@@ -3,96 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - DB Technical Services LLC</title>
+    <title>DB Technical Services LLC - Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION -->
+    <!-- NAVBAR -->
     <header>
-        <nav class="navbar">
+        <div class="navbar">
             <div class="logo">DB Technical Services</div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero services-hero">
-        <div class="hero-text">
-            <h1>Our Services</h1>
-            <p>Explore our professional technical services tailored to meet all your contracting needs. We ensure quality, reliability, and timely delivery for every project.</p>
-        </div>
+    <!-- SERVICES HERO -->
+    <section class="services-hero">
+        <h1>Our Services</h1>
+        <p>We provide a wide range of technical services designed to meet your diverse needs. Each service category below highlights what we offer in detail.</p>
     </section>
 
     <!-- SERVICES CARDS -->
     <section class="services-cards">
-        <!-- Carpentry & Flooring -->
+        <!-- Carpentering & Flooring -->
         <div class="card">
-            <h3>Carpentry & Flooring</h3>
-            <p>Custom furniture making, cabinet & shelving solutions, woodwork & trim, door & window installation, partition walls & ceilings.</p>
+            <img src="images/carpentering.jpg" alt="Carpentering & Flooring" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Carpentering & Flooring Contracting</h3>
+            <p>Custom furniture making, cabinet and shelving solutions, woodwork and trim, door & window installation, partition walls and ceilings.</p>
         </div>
 
         <!-- Painting -->
         <div class="card">
-            <h3>Painting</h3>
+            <img src="images/painting.jpg" alt="Painting Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Painting Contracting</h3>
             <p>Interior & exterior painting, color consultation, wallpaper removal, specialized finishes, metal & wood painting, primers & coatings.</p>
         </div>
 
         <!-- Printing -->
         <div class="card">
-            <h3>Printing</h3>
-            <p>Digital printing, screen printing, specialty & large format printing, label & tag printing, offset printing, packaging printing.</p>
+            <img src="images/printing.jpg" alt="Printing Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Printing Contracting</h3>
+            <p>Digital printing, screen printing, specialty printing, large format printing, label & tag printing, offset printing, packaging printing.</p>
         </div>
 
         <!-- Wallpaper Fixing -->
         <div class="card">
+            <img src="images/wallpaper.jpg" alt="Wallpaper Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
             <h3>Wallpaper Fixing</h3>
-            <p>Wallpaper installation, preparation, repair, removal, and pattern matching for a flawless finish.</p>
+            <p>Wallpaper installation, preparation, repair, removal, and precise pattern matching for flawless results.</p>
         </div>
 
         <!-- Floor & Wall Tiling -->
         <div class="card">
-            <h3>Floor & Wall Tiling</h3>
-            <p>Ceramic, natural stone, mosaic, porcelain & glass tiling, tile repair & replacement for floors and walls.</p>
+            <img src="images/tiling.jpg" alt="Floor & Wall Tiling" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Floor & Wall Tiling Works</h3>
+            <p>Ceramic tiling, natural stone tiling, mosaic tiling, porcelain tiling, glass tiling, tile repair & replacement services.</p>
         </div>
 
-        <!-- Plumbing & Sanitary -->
+        <!-- Plumbing -->
         <div class="card">
-            <h3>Plumbing & Sanitary</h3>
-            <p>Pipe installation, fixtures & fittings, water heater installation, drainage & sewer services, bathroom renovations, leak detection, plumbing maintenance.</p>
+            <img src="images/plumbing.jpg" alt="Plumbing Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Plumbing & Sanitary Contracting</h3>
+            <p>Pipe installation, fixtures & fittings, water heater installation, drainage & sewer services, toilet & bathroom renovations, leak detection, plumbing maintenance.</p>
         </div>
 
-        <!-- Electrical Fittings & Fixtures -->
+        <!-- Electrical -->
         <div class="card">
-            <h3>Electrical Fittings & Fixtures</h3>
-            <p>Lighting installation, circuit breaker installation, electrical panel upgrade, outlet & switch installation, wiring & re-routing, renovation & fit-out services.</p>
+            <img src="images/electrical.jpg" alt="Electrical Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Electrical Fitting & Fixtures</h3>
+            <p>Lighting installation, circuit breaker installation, electrical panel upgrade, outlet & switch installation, wiring & re-routing services.</p>
         </div>
 
-        <!-- AC / HVAC Services -->
+        <!-- AC & Ventilation -->
         <div class="card">
-            <h3>AC & HVAC Services</h3>
-            <p>Air conditioning installation, replacement, repair & maintenance, heat pump installation, ventilation & air filtration setup.</p>
+            <img src="images/ac.jpg" alt="AC & Ventilation Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Air Conditioning, Ventilation & Air Filtration</h3>
+            <p>AC installation, replacement, repair & maintenance, heat pump installation, and full ventilation & air filtration solutions.</p>
         </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <a href="contact.html" class="btn">Contact Us</a>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 DB Technical Services LLC | All Rights Reserved</p>
+        &copy; 2026 DB Technical Services LLC. All rights reserved.
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
