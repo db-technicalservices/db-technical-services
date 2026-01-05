@@ -7,65 +7,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <header>
-        <div class="navbar">
-            <div class="logo">DB Technical Services</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">DB Technical Services LLC</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+    </nav>
+</header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to DB Technical Services LLC</h1>
-            <p>Delivering exceptional technical solutions that exceed client expectations. Our team provides timely, cost-effective, and innovative services with the highest standards of quality and safety.</p>
+<!-- HERO SECTION -->
+<section class="hero" style="text-align:center; justify-content:center;">
+    <div class="hero-text">
+        <h1>Welcome to DB Technical Services LLC</h1>
+        <p>
+            Delivering exceptional technical solutions with precision, reliability,
+            and a strong commitment to quality across residential, commercial,
+            and industrial projects.
+        </p>
+
+        <p style="font-weight:bold; color:#000; margin-top:15px;">
+            Exceptional Services. Trusted Expertise. Reliable Results.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about" style="text-align:center;">
+    <h2>About Us</h2>
+    <p style="max-width:800px; margin:0 auto;">
+        DB Technical Services LLC is dedicated to providing high-quality technical
+        and contracting solutions tailored to meet diverse client needs.
+        Our mission is to deliver timely, cost-effective, and innovative services
+        while maintaining the highest standards of safety, integrity, and customer satisfaction.
+        We believe in building long-lasting relationships through excellence,
+        professionalism, and teamwork.
+    </p>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-preview" style="text-align:center;">
+    <h2>Our Services</h2>
+
+    <p style="max-width:800px; margin:0 auto 30px;">
+        We provide a wide range of technical and contracting services, ensuring
+        seamless execution and reliable solutions across all aspects of
+        construction, maintenance, and installation.
+    </p>
+
+    <div class="service-cards">
+        <div class="card">
+            <h3>Carpentry & Flooring</h3>
+            <p>Custom furniture, cabinetry, partitions, flooring solutions, and finishing works.</p>
         </div>
-    </section>
 
-    <!-- ABOUT & SERVICES PREVIEW -->
-    <section class="about-services">
-        <!-- ABOUT US -->
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>DB Technical Services LLC offers a wide range of technical services to cater to your diverse needs. Our mission is to deliver exceptional solutions while building long-lasting relationships with our clients, partners, and stakeholders.</p>
+        <div class="card">
+            <h3>Painting Contracting</h3>
+            <p>Interior and exterior painting, surface preparation, and specialized coatings.</p>
         </div>
 
-        <!-- SERVICES PREVIEW -->
-        <div class="services-preview">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Carpentering and Flooring Contracting</li>
-                <li>Painting Contracting</li>
-                <li>Printing Contracting</li>
-                <li>Wallpaper Fixing</li>
-                <li>Floor and Wall Tiling Works</li>
-                <li>Plumbing and Sanitary Contracting</li>
-                <li>Electrical Fitting and Fixtures</li>
-                <li>Air Conditioning, Ventilation, and Air Filtration Installation</li>
-            </ul>
-            <a href="services.html" class="btn">View All Services</a>
+        <div class="card">
+            <h3>Plumbing & Sanitary</h3>
+            <p>Complete plumbing installations, repairs, drainage systems, and maintenance.</p>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        &copy; 2026 DB Technical Services LLC. All rights reserved.
-    </footer>
+        <div class="card">
+            <h3>Electrical Services</h3>
+            <p>Lighting, wiring, panel upgrades, fittings, and electrical safety solutions.</p>
+        </div>
 
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-    </script>
+        <div class="card">
+            <h3>AC & Ventilation</h3>
+            <p>Air conditioning installation, maintenance, ventilation, and air filtration systems.</p>
+        </div>
+    </div>
+
+    <a href="services.html" class="btn">View All Services</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 </body>
 </html>
