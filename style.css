@@ -1,6 +1,4 @@
-/* ==========================
-       RESET & BASE
-========================== */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #333;
+    line-height: 1.6;
 }
 
-/* ==========================
-       NAVBAR
-========================== */
+/* NAVBAR */
 header {
-    background-color: #0047ab; /* blue */
-    color: white;
+    background-color: #0047ab;
 }
 
 .navbar {
@@ -28,377 +23,155 @@ header {
     padding: 15px 30px;
 }
 
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.nav-links li a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.nav-links li a:hover {
-    text-decoration: underline;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* HAMBURGER MENU */
 .hamburger {
     display: none;
     flex-direction: column;
-    cursor: pointer;
     gap: 5px;
+    cursor: pointer;
 }
 
 .hamburger span {
-    height: 3px;
     width: 25px;
+    height: 3px;
     background-color: white;
-    border-radius: 2px;
 }
 
-/* ==========================
-       HERO SECTION (HOMEPAGE)
-========================== */
+/* HERO */
 .hero {
-    display: flex;
-    flex-direction: column; /* center everything vertically */
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 30px;
     background-color: #f4f4f4;
-}
-
-.hero-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: #0047ab;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto 15px auto;
-    line-height: 1.6;
-}
-
-.hero-text h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-top: 10px;
-}
-
-/* ==========================
-       ABOUT & SERVICES PREVIEW
-========================== */
-.about-services {
-    display: flex;
-    justify-content: center; /* center the section */
-    align-items: flex-start;
-    gap: 60px; /* spacing between About and Services preview */
-    padding: 60px 30px;
-    flex-wrap: wrap;
-}
-
-.about-text, .services-preview {
-    flex: 1 1 450px; /* ensures minimum width and scales */
-    max-width: 600px;
-}
-
-.about-text h2, .services-preview h2 {
-    color: #0047ab;
-    margin-bottom: 20px;
-    text-align: center; /* headings centered */
-}
-
-.about-text p, .services-preview p {
-    line-height: 1.8;
-    font-size: 1.05rem;
-    color: #333;
-    text-align: justify;
-}
-
-.services-preview ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.services-preview ul li {
-    margin-bottom: 10px;
-}
-
-.services-preview .btn {
-    display: inline-block;
-    background-color: #0047ab;
-    color: #fff;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.services-preview .btn:hover {
-    background-color: #002f6c;
-    transform: translateY(-3px);
-}
-
-/* ==========================
-       SERVICES PAGE STYLING
-========================== */
-.services-hero {
-    padding: 50px 30px;
-    background-color: #e6e6e6;
+    padding: 70px 20px;
     text-align: center;
 }
 
-.services-hero h1 {
-    font-size: 2.5rem;
-    color: #0047ab;
-    margin-bottom: 15px;
+.hero-text {
+    max-width: 900px;
+    margin: auto;
 }
 
-.services-hero p {
+.hero h1 {
+    color: #0047ab;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
     font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
-/* CARDS SECTION */
-.services-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 50px 30px;
-}
-
-.services-cards .card {
-    background-color: #f4f4f4;
-    padding: 25px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-}
-
-.services-cards .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    background-color: #e0e7ff; /* subtle highlight */
-}
-
-.services-cards .card h3 {
-    color: #0047ab;
-    margin-bottom: 10px;
-}
-
-.services-cards .card p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* CTA BUTTON */
-.cta {
-    text-align: center;
-    padding: 30px 0;
-}
-
-/* ==========================
-       CONTACT PAGE STYLING
-========================== */
-.contact-hero {
-    padding: 50px 30px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.contact-hero h1 {
-    font-size: 2.5rem;
-    color: #0047ab;
-    margin-bottom: 15px;
-}
-
-.contact-hero p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* CONTACT BUTTON CARD */
-.contact-section {
-    display: flex;
-    justify-content: center;
-    padding: 50px 30px;
-}
-
-.contact-card {
-    background-color: #e6e6e6;
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    max-width: 500px;
-    transition: transform 0.4s, box-shadow 0.4s;
-    animation: fadeInUp 1s ease forwards;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.contact-card h2 {
-    color: #0047ab;
-    margin-bottom: 15px;
-}
-
-.contact-card p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.whatsapp-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
+.hero-statement {
     font-weight: bold;
-    border-radius: 8px;
-    transition: background-color 0.3s, transform 0.3s;
+    color: #000;
+    margin-top: 15px;
 }
 
-.whatsapp-btn:hover {
-    background-color: #1ebe57;
-    transform: translateY(-3px);
-}
-
-/* CUSTOMER REMARKS */
-.remarks {
-    padding: 50px 30px;
+/* ABOUT */
+.about {
+    padding: 60px 20px;
+    text-align: center;
     background-color: #e6e6e6;
+}
+
+.about h2 {
+    color: #0047ab;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* SERVICES */
+.services-preview {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.remarks h2 {
-    font-size: 2rem;
+.services-preview h2 {
     color: #0047ab;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
-.remark-cards {
+.services-intro {
+    max-width: 850px;
+    margin: 0 auto 40px;
+}
+
+.services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.remark-card {
+.service-card {
     background-color: #f4f4f4;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeInUp 1s ease forwards;
 }
 
-.remark-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-.remark-card p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.remark-card span {
-    font-weight: bold;
+.service-card h3 {
     color: #0047ab;
+    margin-bottom: 10px;
 }
 
-/* ==========================
-       HOMEPAGE FOOTER
-========================== */
+.view-all {
+    background-color: #0047ab;
+    text-decoration: none;
+}
+
+.view-all h3,
+.view-all p {
+    color: white;
+}
+
+/* FOOTER */
 footer {
     background-color: #0047ab;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.95rem;
+    padding: 20px;
 }
 
-/* ==========================
-       ANIMATIONS
-========================== */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ==========================
-       RESPONSIVE
-========================== */
-@media only screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 20px;
-    }
-
-    .hero-text h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .about-services {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .service-cards, .services-cards, .remark-cards {
+/* MOBILE */
+@media (max-width: 768px) {
+    .services-grid {
         grid-template-columns: 1fr;
-        padding: 30px 15px;
-    }
-
-    .services-hero h1,
-    .services-hero p,
-    .contact-hero h1,
-    .contact-hero p {
-        font-size: 1rem;
-    }
-
-    .contact-card {
-        padding: 30px 20px;
     }
 
     .nav-links {
         display: none;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #0047ab;
         position: absolute;
+        right: 20px;
         top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 10px;
-        border-radius: 5px;
+        background-color: #0047ab;
+        flex-direction: column;
+        padding: 15px;
     }
 
     .nav-links.active {
@@ -408,68 +181,4 @@ footer {
     .hamburger {
         display: flex;
     }
-}
-/* ===== HOMEPAGE FIXES ONLY ===== */
-
-/* HERO CENTERING */
-.hero {
-    justify-content: center !important;
-    text-align: center !important;
-}
-
-.hero-text {
-    padding: 0 !important;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.hero-text p {
-    line-height: 1.8;
-}
-
-/* ABOUT US FIX */
-.about {
-    text-align: center !important;
-}
-
-.about h2 {
-    color: #0047ab; /* back to blue */
-    margin-bottom: 20px;
-}
-
-.about p {
-    max-width: 850px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-/* SERVICES PREVIEW FIX */
-.services-preview {
-    text-align: center !important;
-}
-
-.services-preview h2 {
-    text-align: center;
-}
-
-.services-preview p {
-    max-width: 850px;
-    margin: 0 auto 40px;
-    line-height: 1.8;
-}
-
-/* FORCE CARDS CENTERED */
-.service-cards {
-    justify-items: center;
-    align-items: stretch;
-}
-
-/* FOOTER FIX */
-footer {
-    background-color: #0047ab;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
 }
