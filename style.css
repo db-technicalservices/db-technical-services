@@ -99,7 +99,7 @@ header {
     margin: auto;
 }
 
-/* SERVICES */
+/* HOMEPAGE SERVICES */
 .services-preview {
     padding: 60px 20px;
     text-align: center;
@@ -128,6 +128,7 @@ header {
     padding: 25px;
     border-radius: 12px;
     transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeUp 0.8s ease forwards;
 }
 
 .service-card:hover {
@@ -150,12 +151,101 @@ header {
     color: white;
 }
 
+/* SERVICES PAGE */
+.services-hero {
+    padding: 60px 20px;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.services-hero h1 {
+    color: #0047ab;
+    margin-bottom: 15px;
+}
+
+.services-cards {
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-cards .card {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.services-cards .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* CONTACT PAGE */
+.contact-hero {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact-hero h1 {
+    color: #0047ab;
+    margin-bottom: 15px;
+}
+
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: #e6e6e6;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-4px);
+}
+
 /* FOOTER */
 footer {
     background-color: #0047ab;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* MOBILE */
