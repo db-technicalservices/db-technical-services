@@ -65,7 +65,7 @@ header {
 }
 
 /* ==========================
-       HERO SECTION (HOMEPAGE FIXES)
+       HERO SECTION (HOMEPAGE)
 ========================== */
 .hero {
     display: flex;
@@ -86,7 +86,7 @@ header {
 .hero-text p {
     font-size: 1.2rem;
     max-width: 700px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
     line-height: 1.6;
 }
 
@@ -97,30 +97,33 @@ header {
 }
 
 /* ==========================
-       ABOUT / SERVICES PREVIEW
+       ABOUT & SERVICES PREVIEW
 ========================== */
 .about-services {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* center the section */
     align-items: flex-start;
-    padding: 50px 30px;
-    gap: 40px;
+    gap: 60px; /* spacing between About and Services preview */
+    padding: 60px 30px;
     flex-wrap: wrap;
 }
 
 .about-text, .services-preview {
-    flex: 1 1 400px;
+    flex: 1 1 450px; /* ensures minimum width and scales */
+    max-width: 600px;
 }
 
 .about-text h2, .services-preview h2 {
     color: #0047ab;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center; /* headings centered */
 }
 
-.about-text p {
-    line-height: 1.6;
-    font-size: 1rem;
+.about-text p, .services-preview p {
+    line-height: 1.8;
+    font-size: 1.05rem;
     color: #333;
+    text-align: justify;
 }
 
 .services-preview ul {
@@ -130,7 +133,7 @@ header {
 }
 
 .services-preview ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .services-preview .btn {
@@ -187,7 +190,7 @@ header {
 .services-cards .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    background-color: #e0e7ff;
+    background-color: #e0e7ff; /* subtle highlight */
 }
 
 .services-cards .card h3 {
@@ -315,6 +318,17 @@ header {
 .remark-card span {
     font-weight: bold;
     color: #0047ab;
+}
+
+/* ==========================
+       HOMEPAGE FOOTER
+========================== */
+footer {
+    background-color: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95rem;
 }
 
 /* ==========================
