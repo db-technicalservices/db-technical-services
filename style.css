@@ -409,3 +409,67 @@ footer {
         display: flex;
     }
 }
+/* ===== HOMEPAGE FIXES ONLY ===== */
+
+/* HERO CENTERING */
+.hero {
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.hero-text {
+    padding: 0 !important;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-text p {
+    line-height: 1.8;
+}
+
+/* ABOUT US FIX */
+.about {
+    text-align: center !important;
+}
+
+.about h2 {
+    color: #0047ab; /* back to blue */
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* SERVICES PREVIEW FIX */
+.services-preview {
+    text-align: center !important;
+}
+
+.services-preview h2 {
+    text-align: center;
+}
+
+.services-preview p {
+    max-width: 850px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+/* FORCE CARDS CENTERED */
+.service-cards {
+    justify-items: center;
+    align-items: stretch;
+}
+
+/* FOOTER FIX */
+footer {
+    background-color: #0047ab;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
