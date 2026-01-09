@@ -1,138 +1,124 @@
-<!-- HEADER / BANNER -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DB Technical Services LLC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER / BLUE BANNER ===== -->
 <header class="site-header">
-  <div class="logo-container">
-    <!-- DB Logo Pen Animation -->
-    <svg id="db-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="150" height="150">
-      <!-- Letter D -->
+
+  <div class="header-left">
+    <!-- LOGO ANIMATION -->
+    <svg id="db-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
       <path d="M50 250 V50 H120 Q180 50 180 150 Q180 250 120 250 Z"
-            fill="transparent" stroke="#8D8E92" stroke-width="5" stroke-linecap="round"
-            stroke-dasharray="600" stroke-dashoffset="600">
-        <animate attributeName="stroke-dashoffset" from="600" to="0" dur="3s" fill="freeze" />
+        fill="none" stroke="#ffffff" stroke-width="5"
+        stroke-dasharray="600" stroke-dashoffset="600">
+        <animate attributeName="stroke-dashoffset" from="600" to="0" dur="3s" fill="freeze"/>
       </path>
-      <!-- Letter B -->
-      <path d="M200 250 V50 H260 Q290 50 290 100 Q290 150 260 150 H200 M200 150 H260 Q290 150 290 200 Q290 250 260 250 H200"
-            fill="transparent" stroke="#1D73B6" stroke-width="5" stroke-linecap="round"
-            stroke-dasharray="700" stroke-dashoffset="700">
+
+      <path d="M200 250 V50 H260 Q290 50 290 100 Q290 150 260 150 H200
+               M200 150 H260 Q290 150 290 200 Q290 250 260 250 H200"
+        fill="none" stroke="#cfe8ff" stroke-width="5"
+        stroke-dasharray="700" stroke-dashoffset="700">
         <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3s" fill="freeze" begin="0.2s"/>
       </path>
     </svg>
+
+    <div class="brand-text">
+      <h1>DEVOLT BREVIS</h1>
+      <p>DB Technical Services LLC</p>
+    </div>
   </div>
 
-  <!-- NAVIGATION LINKS -->
   <nav class="site-nav">
-    <ul>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
   </nav>
+
 </header>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 <section class="hero">
-    <div class="hero-text">
-        <h1>Welcome to DB Technical Services LLC</h1>
-        <p>
-            Delivering exceptional technical solutions with precision, reliability,
-            and a commitment to quality across residential, commercial,
-            and industrial projects.
-        </p>
+  <h2>Welcome to DB Technical Services LLC</h2>
+  <p>
+    Delivering exceptional technical solutions with precision, reliability,
+    and a commitment to quality across residential, commercial,
+    and industrial projects.
+  </p>
 
-        <p class="hero-statement">
-            Exceptional Services. Trusted Expertise. Reliable Results.
-        </p>
+  <div class="hero-statement">
+    <strong>Exceptional Services.</strong>
+    <strong>Trusted Expertise.</strong>
+    <strong>Reliable Results.</strong>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <h2>About Us</h2>
+  <p>
+    DB Technical Services LLC provides high-quality technical and contracting
+    solutions tailored to diverse client needs. Our mission is to deliver
+    timely, cost-effective, and innovative services while maintaining the
+    highest standards of safety, integrity, and customer satisfaction.
+  </p>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <h2>Our Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <img src="1.jpeg">
+      <h3>Carpentry & Flooring</h3>
     </div>
-</section>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Welcome to DB Technical Services LLC</h1>
-        <p>
-            Delivering exceptional technical solutions with precision, reliability,
-            and a commitment to quality across residential, commercial,
-            and industrial projects.
-        </p>
-
-        <p class="hero-statement">
-            Exceptional Services. Trusted Expertise. Reliable Results.
-        </p>
+    <div class="service-card">
+      <img src="2.jpeg">
+      <h3>Painting Contracting</h3>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section class="about">
-    <h2>About Us</h2>
-    <p>
-        DB Technical Services LLC provides high-quality technical and contracting
-        solutions tailored to diverse client needs. Our mission is to deliver
-        timely, cost-effective, and innovative services while maintaining the
-        highest standards of safety, integrity, and customer satisfaction.
-    </p>
-</section>
-
-<!-- SERVICES PREVIEW -->
-<section class="services-preview">
-    <h2>Our Services</h2>
-
-    <p class="services-intro">
-        We offer a comprehensive range of technical services designed to ensure
-        efficiency, durability, and excellence in every project we undertake.
-    </p>
-
-    <div class="services-grid">
-        <div class="service-card">
-            <h3>Carpentry & Flooring</h3>
-            <p>Custom furniture, cabinetry, partitions, and flooring solutions.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Painting Contracting</h3>
-            <p>Interior and exterior painting with premium finishes.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Plumbing & Sanitary</h3>
-            <p>Complete plumbing installations and maintenance services.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>Electrical Services</h3>
-            <p>Lighting, wiring, fittings, and panel upgrades.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>AC & Ventilation</h3>
-            <p>Air conditioning, ventilation, and air filtration systems.</p>
-        </div>
-
-        <a href="services.html" class="service-card view-all">
-            <h3>View All Services</h3>
-            <p>Explore our complete range of technical solutions.</p>
-        </a>
+    <div class="service-card">
+      <img src="3.jpeg">
+      <h3>Plumbing & Sanitary</h3>
     </div>
-</section>
-    
-    <!-- CONTACT US STRIP -->
-<section class="contact-strip">
-    <p>Need assistance or a quick quotation?</p>
-    <a href="https://wa.me/971569068683" target="_blank" class="whatsapp-contact">
-        <img src="whatsapp.png" alt="WhatsApp">
-        <span>Contact Us on WhatsApp</span>
+
+    <div class="service-card">
+      <img src="4.jpeg">
+      <h3>Electrical Services</h3>
+    </div>
+
+    <div class="service-card">
+      <img src="5.jpeg">
+      <h3>AC & Ventilation</h3>
+    </div>
+
+    <a href="services.html" class="service-card view-all">
+      <img src="6.jpeg">
+      <h3>View All Services</h3>
     </a>
+  </div>
 </section>
 
-    </div>
+<!-- ===== WHATSAPP ===== -->
+<section class="contact-strip" id="contact">
+  <h3>Need assistance or a quick quotation?</h3>
+  <a href="https://wa.me/971569068683" target="_blank" class="whatsapp-btn">
+    Contact Us on WhatsApp
+  </a>
 </section>
 
+<!-- ===== FOOTER ===== -->
 <footer>
-    <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
+  <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
 </footer>
 
-<script>
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-}
-<script src="script.js"></script>
 </body>
 </html>
