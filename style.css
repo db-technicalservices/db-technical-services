@@ -506,3 +506,45 @@ footer {
 .slider button:hover {
     background: rgba(0,0,0,0.85);
 }
+/* CONTACT STRIP - HOMEPAGE */
+.contact-strip {
+    background-color: #0047ab;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-strip p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.whatsapp-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-contact img {
+    width: 22px;
+    height: 22px;
+}
+
+.whatsapp-contact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .contact-strip p {
+        font-size: 1rem;
+    }
+}
