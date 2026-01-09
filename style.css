@@ -595,3 +595,55 @@ footer {
   text-align: center;
   padding: 50px 20px;
 }
+/* ===== UNIVERSAL HEADER OVERRIDE ===== */
+.site-header {
+  background-color: #0047ab;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#db-logo {
+  width: 65px;
+  height: 65px;
+}
+
+.brand-text h1 {
+  font-size: 18px;
+  color: white;
+}
+
+.brand-text p {
+  font-size: 12px;
+  color: #dbe9ff;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE HEADER */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
