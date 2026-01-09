@@ -7,6 +7,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Logo Animation Container -->
+<div class="logo-animation-container">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 750 750"
+    class="logo-animation"
+  >
+    <!-- D letter -->
+    <path
+      d="M0 0 C247.5 0 495 0 750 0 C750 247.5 750 495 750 750 C502.5 750 255 750 0 750 C0 502.5 0 255 0 0 Z"
+      fill="#FEFEFE"
+    />
+    <path
+      d="M0 0 C1.69648799 -0.00135466 3.39297559 -0.00330175 5.08946228 -0.00579834 C8.63007333 -0.00872412 12.17058258 -0.00454313 15.71118164 0.00488281 C20.14804409 0.01614618 24.58466316 0.00959098 29.0215168 -0.00199318 C45.78482926 -0.03915596 62.50943262 0.0735525 79.2421875 1.1640625 C80.44996353 1.2425946 81.65773956 1.32112671 82.90211487 1.40203857 C122.23115889 4.25986378 152.02812788 15.62881262 179.21484375 44.578125 C190.77191198 58.12944825 199.19863671 74.30356454 199.21484375 92.390625 C199.22708984 93.08671875 199.23933594 93.7828125 199.25195312 94.5"
+      fill="#8D8E92"
+      class="letter"
+    />
+    <!-- B letter -->
+    <path
+      d="M0 0 C2.54835804 0.62338866 5.08427381 1.13665973 7.66015625 1.62890625 C34.33972179 6.90433047 63.82977597 17.74684227 85.90625 33.7109375"
+      fill="#1D73B6"
+      class="letter"
+    />
+  </svg>
+</div>
+
+<style>
+/* Container */
+.logo-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; /* adjust spacing above/below */
+}
+
+/* SVG sizing */
+.logo-animation {
+  width: 300px;
+  height: 300px;
+  max-width: 80vw; /* scales down on mobile */
+}
+
+/* Pen stroke animation */
+.letter {
+  fill: none; /* remove fill for animation effect */
+  stroke-width: 4; /* adjust thickness */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000; /* total length of path, adjust if needed */
+  stroke-dashoffset: 1000;
+  animation: draw 3s forwards ease-in-out;
+}
+
+/* Individual letter colors */
+.letter:nth-child(1) {
+  stroke: #8D8E92;
+}
+.letter:nth-child(2) {
+  stroke: #1D73B6;
+}
+
+/* Animation keyframes */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
 
 <header>
     <nav class="navbar">
