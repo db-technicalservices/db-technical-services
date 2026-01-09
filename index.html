@@ -1,30 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DB Technical Services LLC</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- DB Logo Pen Animation -->
-<div style="display:flex; justify-content:center; align-items:center; margin:50px 0;">
-  <svg id="db-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
-    <!-- Letter D -->
-    <path d="M50 250 V50 H120 Q180 50 180 150 Q180 250 120 250 Z"
-          fill="transparent" stroke="#8D8E92" stroke-width="5" stroke-linecap="round"
-          stroke-dasharray="600" stroke-dashoffset="600">
-      <animate attributeName="stroke-dashoffset" from="600" to="0" dur="3s" fill="freeze" />
-    </path>
-    <!-- Letter B -->
-    <path d="M200 250 V50 H260 Q290 50 290 100 Q290 150 260 150 H200 M200 150 H260 Q290 150 290 200 Q290 250 260 250 H200"
-          fill="transparent" stroke="#1D73B6" stroke-width="5" stroke-linecap="round"
-          stroke-dasharray="700" stroke-dashoffset="700">
-      <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3s" fill="freeze" begin="0.2s"/>
-    </path>
-  </svg>
-</div>
+<!-- HEADER / BANNER -->
+<header class="site-header">
+  <div class="logo-container">
+    <!-- DB Logo Pen Animation -->
+    <svg id="db-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="150" height="150">
+      <!-- Letter D -->
+      <path d="M50 250 V50 H120 Q180 50 180 150 Q180 250 120 250 Z"
+            fill="transparent" stroke="#8D8E92" stroke-width="5" stroke-linecap="round"
+            stroke-dasharray="600" stroke-dashoffset="600">
+        <animate attributeName="stroke-dashoffset" from="600" to="0" dur="3s" fill="freeze" />
+      </path>
+      <!-- Letter B -->
+      <path d="M200 250 V50 H260 Q290 50 290 100 Q290 150 260 150 H200 M200 150 H260 Q290 150 290 200 Q290 250 260 250 H200"
+            fill="transparent" stroke="#1D73B6" stroke-width="5" stroke-linecap="round"
+            stroke-dasharray="700" stroke-dashoffset="700">
+        <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3s" fill="freeze" begin="0.2s"/>
+      </path>
+    </svg>
+  </div>
 
+  <!-- NAVIGATION LINKS -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to DB Technical Services LLC</h1>
+        <p>
+            Delivering exceptional technical solutions with precision, reliability,
+            and a commitment to quality across residential, commercial,
+            and industrial projects.
+        </p>
+
+        <p class="hero-statement">
+            Exceptional Services. Trusted Expertise. Reliable Results.
+        </p>
+    </div>
+</section>
 
 <!-- HERO -->
 <section class="hero">
