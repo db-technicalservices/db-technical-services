@@ -1,59 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* NAVBAR */
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #f4f7fb;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ================= HEADER / NAVBAR ================= */
+
 header {
+    width: 100%;
     background-color: #0047ab;
+    color: white;
+}
+
+header .navbar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-/* TOP BANNER */
-header {
-    width: 100%;             /* full width */
-    background-color: #0047ab; /* or your brand color */
-    color: white;
-    display: flex;
-    justify-content: space-between; /* aligns logo left, menu right */
-    align-items: center;
-    padding: 15px 50px;      /* horizontal padding */
-    box-sizing: border-box;
 }
 
-header h1 {
-    font-size: 32px;
-}
-
-.navbar {
-    display: flex;
-    gap: 25px; /* space between buttons */
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
+/* LOGO */
 .logo {
-    color: white;
     font-size: 22px;
-    font-weight: bold;
-}
-.whatsapp-text {
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    font-weight: 600;
 }
 
+/* NAV */
 nav {
     display: flex;
     gap: 25px;
@@ -63,7 +49,21 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
 .home-center {
     text-align: center;
 }
@@ -73,59 +73,8 @@ nav a {
     margin: 0 auto 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
+/* ================= HEADINGS ================= */
 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: #f4f7fb;
-    color: #222;
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-}
-
-
-/* NAVBAR */
-header {
-    background-color: #0047ab;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 16px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* MAIN CONTAINER */
-.container {
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-/* HEADINGS */
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -137,17 +86,18 @@ h2 {
 }
 
 p {
-    line-height: 1.7;
     margin-bottom: 15px;
 }
 
-/* SERVICES LIST */
+/* ================= SERVICES ================= */
+
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     margin-top: 30px;
 }
+
 .service-card {
     background: white;
     padding: 20px;
@@ -162,19 +112,31 @@ p {
     margin-bottom: 10px;
 }
 
-/* WHATSAPP BUTTON */
+/* ================= WHATSAPP ================= */
+
+.whatsapp-text {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 .whatsapp-btn {
     display: inline-block;
-    margin: 30px 0;
     padding: 15px 25px;
     background-color: #25D366;
     color: white;
     font-size: 16px;
     text-decoration: none;
     border-radius: 8px;
+    transition: 0.3s;
 }
 
-/* FEEDBACK */
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
+
+/* ================= FEEDBACK ================= */
+
 .feedback-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -188,33 +150,9 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-/* FOOTER */
-footer {
-    width: 100%;                  /* full width */
-    background-color: #0047ab;    /* same as banner or darker */
-    color: white;
-    padding: 30px 50px;           /* spacing top-bottom and sides */
-    box-sizing: border-box;
-    text-align: center;            /* center content */
-}
 
-footer p {
-    margin: 0;
-    font-size: 16px;
-}
+/* ================= SLIDER ================= */
 
-footer a {
-    color: #25D366;               /* WhatsApp green for example */
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* IMAGE SLIDER */
 .slider {
     position: relative;
     width: 100%;
@@ -241,7 +179,7 @@ footer a:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 71, 171, 0.8);
+    background: rgba(0, 71, 171, 0.85);
     color: white;
     border: none;
     padding: 12px 16px;
@@ -261,69 +199,57 @@ footer a:hover {
 .slide-btn:hover {
     background: #0047ab;
 }
-/* MOBILE RESPONSIVE */
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    background-color: #0047ab;
+    color: white;
+}
+
+footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
 @media (max-width: 768px) {
 
-    header {
+    header .navbar-wrapper {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        gap: 10px;
         padding: 15px 20px;
     }
 
     nav {
-        margin-top: 10px;
         flex-direction: column;
         gap: 10px;
-        width: 100%;
     }
-
-    nav a {
-        font-size: 15px;
-    }
-    @media (max-width: 768px) {
-
-    .slide {
-        height: 250px;
-    }
-
-    .slide-btn {
-        padding: 8px 12px;
-        font-size: 16px;
-    }
-}
-
 
     .container {
         margin: 30px auto;
         padding: 0 15px;
     }
 
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card img {
-        height: auto;
-    }
-
-    .whatsapp-btn {
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-    }
-@media (max-width: 768px) {
     h1 {
         font-size: 26px;
     }
@@ -335,10 +261,26 @@ footer a:hover {
     body {
         font-size: 16px;
     }
-}
 
-    footer {
-        font-size: 13px;
-        padding: 12px;
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .slide {
+        height: 250px;
+    }
+
+    .slide-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .whatsapp-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
