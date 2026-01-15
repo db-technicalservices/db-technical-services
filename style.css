@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* RESET */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ================= BODY ================= */
 body {
     background-color: #f4f7fb;
     color: #222;
@@ -17,11 +17,9 @@ body {
 }
 
 /* ================= HEADER / NAVBAR ================= */
-
 header {
     width: 100%;
     background-color: #0047ab;
-    color: white;
 }
 
 header .navbar-wrapper {
@@ -29,12 +27,13 @@ header .navbar-wrapper {
     margin: 0 auto;
     padding: 15px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* LEFT logo, RIGHT nav */
     align-items: center;
 }
 
 /* LOGO */
 .logo {
+    color: white;
     font-size: 22px;
     font-weight: 600;
 }
@@ -49,15 +48,13 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    transition: 0.3s;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* ================= MAIN CONTAINER ================= */
-
+/* ================= MAIN CONTENT ================= */
 .container {
     max-width: 1100px;
     margin: 50px auto;
@@ -74,7 +71,6 @@ nav a:hover {
 }
 
 /* ================= HEADINGS ================= */
-
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -90,7 +86,6 @@ p {
 }
 
 /* ================= SERVICES ================= */
-
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -113,7 +108,6 @@ p {
 }
 
 /* ================= WHATSAPP ================= */
-
 .whatsapp-text {
     font-size: 18px;
     margin-top: 30px;
@@ -122,13 +116,13 @@ p {
 
 .whatsapp-btn {
     display: inline-block;
+    margin: 30px 0;
     padding: 15px 25px;
     background-color: #25D366;
     color: white;
     font-size: 16px;
     text-decoration: none;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
 .whatsapp-btn:hover {
@@ -136,7 +130,6 @@ p {
 }
 
 /* ================= FEEDBACK ================= */
-
 .feedback-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -152,7 +145,6 @@ p {
 }
 
 /* ================= SLIDER ================= */
-
 .slider {
     position: relative;
     width: 100%;
@@ -196,12 +188,7 @@ p {
     right: 15px;
 }
 
-.slide-btn:hover {
-    background: #0047ab;
-}
-
 /* ================= FOOTER ================= */
-
 footer {
     width: 100%;
     background-color: #0047ab;
@@ -222,32 +209,26 @@ footer p {
 footer a {
     color: #25D366;
     text-decoration: none;
-    font-weight: 500;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
-
+/* ================= MOBILE (ONLY FIX, NO DAMAGE) ================= */
 @media (max-width: 768px) {
 
     header .navbar-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
         padding: 15px 20px;
     }
 
     nav {
         flex-direction: column;
+        align-items: center;
         gap: 10px;
-    }
-
-    .container {
-        margin: 30px auto;
-        padding: 0 15px;
     }
 
     h1 {
@@ -260,6 +241,11 @@ footer a:hover {
 
     body {
         font-size: 16px;
+    }
+
+    .container {
+        margin: 30px auto;
+        padding: 0 15px;
     }
 
     .services-list {
@@ -282,55 +268,5 @@ footer a:hover {
 
     footer p {
         font-size: 14px;
-    }
-}
-/* ================= SAFE HEADER OVERRIDE ================= */
-
-/* DESKTOP: keep logo left, menu right */
-header {
-    width: 100%;
-    background-color: #0047ab;
-}
-
-header .navbar-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between; /* LEFT logo, RIGHT nav */
-    align-items: center;
-}
-
-/* NAV stays horizontal on desktop */
-nav {
-    display: flex;
-    gap: 25px;
-}
-
-/* ================= MOBILE FIX (CLEAN, NOT UGLY) ================= */
-
-@media (max-width: 768px) {
-
-    header .navbar-wrapper {
-        flex-direction: column;   /* stack only on mobile */
-        align-items: center;
-        gap: 12px;
-        padding: 15px 20px;
-    }
-
-    .logo {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    nav a {
-        font-size: 15px;
     }
 }
