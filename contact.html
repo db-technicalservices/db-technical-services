@@ -1,106 +1,57 @@
-<header class="site-header">
-  <div class="logo-container">
-    <!-- SVG LOGO -->
-    <svg id="db-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
-      <path d="M50 250 V50 H120 Q180 50 180 150 Q180 250 120 250 Z"
-        fill="none" stroke="#ffffff" stroke-width="5"
-        stroke-dasharray="600" stroke-dashoffset="600">
-        <animate attributeName="stroke-dashoffset" from="600" to="0" dur="3s" fill="freeze"/>
-      </path>
-
-      <path d="M200 250 V50 H260 Q290 50 290 100 Q290 150 260 150 H200
-               M200 150 H260 Q290 150 290 200 Q290 250 260 250 H200"
-        fill="none" stroke="#cfe8ff" stroke-width="5"
-        stroke-dasharray="700" stroke-dashoffset="700">
-        <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3s" fill="freeze" begin="0.2s"/>
-      </path>
-    </svg>
-
-    <div class="brand-text">
-      <h1>DEVOLT BREVIS</h1>
-      <p>DB Technical Services LLC</p>
-    </div>
-  </div>
-
-  <nav class="site-nav">
-    <a href="index.html#about">About Us</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - DB Technical Services LLC</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">DB Technical Services</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
 
-    <!-- HERO / CONTACT INTRO -->
-    <section class="hero contact-hero">
-        <div class="hero-text">
-            <h1>Get in Touch</h1>
-            <p>We value our clients' feedback and are available for inquiries, quotations, and technical support. Your satisfaction matters to us.</p>
+<header>
+    <div class="logo">Dewald Brevis</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Get in Touch</h1>
+    <p>
+        We value our customers and your feedback matters to us.
+        Reach out anytime for inquiries or service requests.
+    </p>
+
+    <a class="whatsapp-btn"
+       href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20would%20like%20to%20get%20in%20touch.">
+       Contact Us on WhatsApp
+    </a>
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="feedback-grid">
+        <div class="feedback-card">
+            <p>"DB Technical Services delivered exceptional work on our flooring project. Professional and timely service."</p>
+            <strong>- Ahmed K.</strong>
         </div>
-    </section>
 
-    <!-- CONTACT BUTTON -->
-    <section class="contact-section">
-        <div class="contact-card">
-            <h2>Contact Us via WhatsApp</h2>
-            <p>Click the button below to start a conversation with us. We are available to answer your questions and provide assistance promptly.</p>
-            <a href="https://wa.me/971569068683" target="_blank" class="btn whatsapp-btn">
-                Message Us on WhatsApp
-            </a>
+        <div class="feedback-card">
+            <p>"The painting team transformed our office interior. Highly recommend their expert services."</p>
+            <strong>- Sarah L.</strong>
         </div>
-    </section>
 
-    <!-- CTA / CUSTOMER REMARKS -->
-    <section class="remarks">
-        <h2>What Our Customers Say</h2>
-        <div class="remark-cards">
-            <div class="remark-card">
-                <p>"DB Technical Services delivered exceptional work on our flooring project. Professional and timely service."</p>
-                <span>- Ahmed K.</span>
-            </div>
-            <div class="remark-card">
-                <p>"The painting team transformed our office interior. Highly recommend their expert services."</p>
-                <span>- Sarah L.</span>
-            </div>
-            <div class="remark-card">
-                <p>"Quick response and excellent technical support. Very reliable and customer-friendly."</p>
-                <span>- Omar R.</span>
-            </div>
+        <div class="feedback-card">
+            <p>"Quick response and excellent technical support. Very reliable and customer-friendly."</p>
+            <strong>- Omar R.</strong>
         </div>
-    </section>
+    </div>
+</div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 DB Technical Services LLC | All Rights Reserved</p>
-    </footer>
+<footer>
+    © 2026 DB Technical Services LLC. All rights reserved.
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-<footer class="site-footer">
-  <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
-</footer>
