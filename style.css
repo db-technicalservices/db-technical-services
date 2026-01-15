@@ -9,6 +9,39 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
+/* TOP BANNER */
+header {
+    width: 100%;             /* full width */
+    background-color: #0047ab; /* or your brand color */
+    color: white;
+    display: flex;
+    justify-content: space-between; /* aligns logo left, menu right */
+    align-items: center;
+    padding: 15px 50px;      /* horizontal padding */
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px; /* space between buttons */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
 
 .logo {
     color: white;
@@ -156,16 +189,32 @@ p {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 /* FOOTER */
 footer {
-    background-color: #0047ab;
+    width: 100%;                  /* full width */
+    background-color: #0047ab;    /* same as banner or darker */
     color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 60px;
-    font-size: 14px;
+    padding: 30px 50px;           /* spacing top-bottom and sides */
+    box-sizing: border-box;
+    text-align: center;            /* center content */
 }
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #25D366;               /* WhatsApp green for example */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* IMAGE SLIDER */
 .slider {
     position: relative;
