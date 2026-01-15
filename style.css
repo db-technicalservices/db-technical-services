@@ -284,3 +284,53 @@ footer a:hover {
         font-size: 14px;
     }
 }
+/* ================= SAFE HEADER OVERRIDE ================= */
+
+/* DESKTOP: keep logo left, menu right */
+header {
+    width: 100%;
+    background-color: #0047ab;
+}
+
+header .navbar-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between; /* LEFT logo, RIGHT nav */
+    align-items: center;
+}
+
+/* NAV stays horizontal on desktop */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* ================= MOBILE FIX (CLEAN, NOT UGLY) ================= */
+
+@media (max-width: 768px) {
+
+    header .navbar-wrapper {
+        flex-direction: column;   /* stack only on mobile */
+        align-items: center;
+        gap: 12px;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+}
