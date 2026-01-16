@@ -1,194 +1,109 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <title>Dewald Brevis LLC</title> 
-    <link rel="stylesheet" href="style.css"> 
-</head> 
-  <link rel="icon" type="image/png" href="logo.png"> 
-<body> 
-
-  
-
-<header> 
-    <div class="logo">Dewald Brevis</div> 
-
-    <nav> 
-
-        <a href="index.html">Home</a> 
-
-        <a href="services.html">Services</a> 
-
-        <a href="contact.html">Contact Us</a> 
-
-    </nav> 
-
-</header> 
-
-  
-
-<div class="container home-center"> 
-
-    <h1>Welcome to Dewald Brevis LLC</h1> 
-
-    <p> 
-
-        Dewald Brevis LLC is a UAE-based company providing professional technical and contracting services. 
-
-        We are committed to quality craftsmanship, timely delivery, and customer satisfaction. 
-
-    </p> 
-
-  
-
-    <h2>About Us</h2> 
-
-    <p> 
-
-        DB Technical Services LLC provides high-quality technical and contracting solutions tailored to 
-
-        diverse client needs. Our mission is to deliver timely, cost-effective, and innovative services 
-
-        while maintaining the highest standards of safety, integrity, and customer satisfaction. 
-
-    </p> 
-
-  
-
-    <h2>What We Do</h2> 
-
-    <div class="services-list"> 
-
-        <div class="service-card">Carpentering</div> 
-
-        <div class="service-card">Flooring</div> 
-
-        <div class="service-card">Painting</div> 
-
-        <div class="service-card">Wallpaper</div> 
-
-        <div class="service-card">Tiling</div> 
-
-        <div class="service-card">Plumbing</div> 
-
-        <div class="service-card">Air Conditioning</div> 
-
-        <div class="service-card">Electrical Fitting</div> 
-
-        <div class="service-card">Renovation</div> 
-
-    </div> 
-
-  
-
-   <h2>Our Work</h2> 
-
-  
-
-<div class="slider"> 
-
-    <button class="slide-btn left" onclick="moveSlide(-1)">&#10094;</button> 
-
-  
-
-    <div class="slides"> 
-
-        <img src="1.jpeg" class="slide"> 
-
-        <img src="2.jpeg" class="slide"> 
-
-        <img src="3.jpeg" class="slide"> 
-
-        <img src="4.jpeg" class="slide"> 
-
-        <img src="5.jpeg" class="slide"> 
-
-        <img src="6.jpeg" class="slide"> 
-
-        <img src="7.jpeg" class="slide"> 
-
-        <img src="8.jpeg" class="slide"> 
-
-    </div> 
-
-  
-
-    <button class="slide-btn right" onclick="moveSlide(1)">&#10095;</button> 
-
-</div> 
-
-  
-
-<p class="whatsapp-text"> 
-
-    Have a project in mind or need expert technical services? 
-
-    Our team is ready to assist you with reliable and professional solutions. 
-
-</p> 
-
-    <a class="whatsapp-btn" 
-
-       href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20have%20a%20query."> 
-
-       WhatsApp Us for Any Queries 
-
-    </a> 
-
-</div> 
-
-  
-
-<footer> 
-
-    © 2026 DB Technical Services LLC. All rights reserved. 
-
-</footer> 
-
-<script> 
-
-let currentSlide = 0; 
-
-  
-
-function moveSlide(direction) { 
-
-    const slides = document.querySelector(".slides"); 
-
-    const totalSlides = document.querySelectorAll(".slide").length; 
-
-  
-
-    currentSlide += direction; 
-
-  
-
-    if (currentSlide < 0) { 
-
-        currentSlide = totalSlides - 1; 
-
-    } 
-
-  
-
-    if (currentSlide >= totalSlides) { 
-
-        currentSlide = 0; 
-
-    } 
-
-  
-
-    slides.style.transform = "translateX(-" + (currentSlide * 100) + "%)"; 
-
-} 
-
-</script> 
-
-  
-
-</body> 
-
-</html> 
-
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Technical Services LLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">DB Technical Services LLC</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Welcome to DB Technical Services LLC</h1>
+        <p>
+            Delivering exceptional technical solutions with precision, reliability,
+            and a commitment to quality across residential, commercial,
+            and industrial projects.
+        </p>
+
+        <p class="hero-statement">
+            Exceptional Services. Trusted Expertise. Reliable Results.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        DB Technical Services LLC provides high-quality technical and contracting
+        solutions tailored to diverse client needs. Our mission is to deliver
+        timely, cost-effective, and innovative services while maintaining the
+        highest standards of safety, integrity, and customer satisfaction.
+    </p>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-preview">
+    <h2>Our Services</h2>
+
+    <p class="services-intro">
+        We offer a comprehensive range of technical services designed to ensure
+        efficiency, durability, and excellence in every project we undertake.
+    </p>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Carpentry & Flooring</h3>
+            <p>Custom furniture, cabinetry, partitions, and flooring solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Painting Contracting</h3>
+            <p>Interior and exterior painting with premium finishes.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Plumbing & Sanitary</h3>
+            <p>Complete plumbing installations and maintenance services.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Services</h3>
+            <p>Lighting, wiring, fittings, and panel upgrades.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>AC & Ventilation</h3>
+            <p>Air conditioning, ventilation, and air filtration systems.</p>
+        </div>
+
+        <a href="services.html" class="service-card view-all">
+            <h3>View All Services</h3>
+            <p>Explore our complete range of technical solutions.</p>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
