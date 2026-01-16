@@ -541,3 +541,16 @@ footer {
         font-size: 0.95rem;
     }
 }
+/* MOBILE SLIDER FIX */
+.slides {
+    display: block; /* stack slides vertically for better mobile display */
+}
+
+.slide {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    display: block; /* show all slides as a scrollable carousel */
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
