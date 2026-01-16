@@ -1,3 +1,206 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <title>Dewald Brevis LLC</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+
+</head> 
+
+  <link rel="icon" type="image/png" href="logo.png"> 
+
+<body> 
+
+  
+
+<header> 
+
+    <div class="logo">Dewald Brevis</div> 
+
+    <nav> 
+
+        <a href="index.html">Home</a> 
+
+        <a href="services.html">Services</a> 
+
+        <a href="contact.html">Contact Us</a> 
+
+    </nav> 
+
+</header> 
+
+  
+
+<div class="container home-center"> 
+
+    <h1>Welcome to Dewald Brevis LLC</h1> 
+
+    <p> 
+
+        Dewald Brevis LLC is a UAE-based company providing professional technical and contracting services. 
+
+        We are committed to quality craftsmanship, timely delivery, and customer satisfaction. 
+
+    </p> 
+
+  
+
+    <h2>About Us</h2> 
+
+    <p> 
+
+        DB Technical Services LLC provides high-quality technical and contracting solutions tailored to 
+
+        diverse client needs. Our mission is to deliver timely, cost-effective, and innovative services 
+
+        while maintaining the highest standards of safety, integrity, and customer satisfaction. 
+
+    </p> 
+
+  
+
+    <h2>What We Do</h2> 
+
+    <div class="services-list"> 
+
+        <div class="service-card">Carpentering</div> 
+
+        <div class="service-card">Flooring</div> 
+
+        <div class="service-card">Painting</div> 
+
+        <div class="service-card">Wallpaper</div> 
+
+        <div class="service-card">Tiling</div> 
+
+        <div class="service-card">Plumbing</div> 
+
+        <div class="service-card">Air Conditioning</div> 
+
+        <div class="service-card">Electrical Fitting</div> 
+
+        <div class="service-card">Renovation</div> 
+
+    </div> 
+
+  
+
+   <h2>Our Work</h2> 
+
+  
+
+<div class="slider"> 
+
+    <button class="slide-btn left" onclick="moveSlide(-1)">&#10094;</button> 
+
+  
+
+    <div class="slides"> 
+
+        <img src="1.jpeg" class="slide"> 
+
+        <img src="2.jpeg" class="slide"> 
+
+        <img src="3.jpeg" class="slide"> 
+
+        <img src="4.jpeg" class="slide"> 
+
+        <img src="5.jpeg" class="slide"> 
+
+        <img src="6.jpeg" class="slide"> 
+
+        <img src="7.jpeg" class="slide"> 
+
+        <img src="8.jpeg" class="slide"> 
+
+    </div> 
+
+  
+
+    <button class="slide-btn right" onclick="moveSlide(1)">&#10095;</button> 
+
+</div> 
+
+  
+
+<p class="whatsapp-text"> 
+
+    Have a project in mind or need expert technical services? 
+
+    Our team is ready to assist you with reliable and professional solutions. 
+
+</p> 
+
+    <a class="whatsapp-btn" 
+
+       href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20have%20a%20query."> 
+
+       WhatsApp Us for Any Queries 
+
+    </a> 
+
+</div> 
+
+  
+
+<footer> 
+
+    © 2026 DB Technical Services LLC. All rights reserved. 
+
+</footer> 
+
+<script> 
+
+let currentSlide = 0; 
+
+  
+
+function moveSlide(direction) { 
+
+    const slides = document.querySelector(".slides"); 
+
+    const totalSlides = document.querySelectorAll(".slide").length; 
+
+  
+
+    currentSlide += direction; 
+
+  
+
+    if (currentSlide < 0) { 
+
+        currentSlide = totalSlides - 1; 
+
+    } 
+
+  
+
+    if (currentSlide >= totalSlides) { 
+
+        currentSlide = 0; 
+
+    } 
+
+  
+
+    slides.style.transform = "translateX(-" + (currentSlide * 100) + "%)"; 
+
+} 
+
+</script> 
+
+  
+
+</body> 
+
+</html> 
+
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
