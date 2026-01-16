@@ -2,78 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Technical Services LLC - Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
-  <link rel="icon" type="image/png" href="logo.png">
 <body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="logo">DB Technical Services</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 
-<header>
-    <div class="logo">Dewald Brevis</div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
+    <!-- SERVICES HERO -->
+    <section class="services-hero">
+        <h1>Our Services</h1>
+        <p>We provide a wide range of technical services designed to meet your diverse needs. Each service category below highlights what we offer in detail.</p>
+    </section>
 
-<div class="container">
-    <h1>Our Services</h1>
-
-    <div class="services-list">
-        <div class="service-card">
-            <img src="carpentering.jpeg">
-            <h3>Carpentering & Flooring</h3>
-            <p>Precision woodwork and durable flooring solutions.</p>
+    <!-- SERVICES CARDS -->
+    <section class="services-cards">
+        <!-- Carpentering & Flooring -->
+        <div class="card">
+            <img src="carpentering.jpeg" alt="Carpentering & Flooring" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Carpentering & Flooring Contracting</h3>
+            <p>Custom furniture making, cabinet and shelving solutions, woodwork and trim, door & window installation, partition walls and ceilings.</p>
         </div>
 
-        <div class="service-card">
-            <img src="painting.jpeg">
-            <h3>Painting Services</h3>
-            <p>Professional interior and exterior painting services.</p>
+        <!-- Painting -->
+        <div class="card">
+            <img src="painting.jpeg" alt="Painting Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Painting Contracting</h3>
+            <p>Interior & exterior painting, color consultation, wallpaper removal, specialized finishes, metal & wood painting, primers & coatings.</p>
         </div>
 
-        <div class="service-card">
-            <img src="wallpaper.jpeg">
-            <h3>Wallpaper Services</h3>
-            <p>Stylish wallpaper installation with flawless finish.</p>
+        <!-- Printing -->
+        <div class="card">
+            <img src="printing.jpeg" alt="Printing Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Printing Contracting</h3>
+            <p>Digital printing, screen printing, specialty printing, large format printing, label & tag printing, offset printing, packaging printing.</p>
         </div>
 
-        <div class="service-card">
-            <img src="tiling.jpeg">
-            <h3>Floor & Wall Tiling</h3>
-            <p>High-quality tiling work for modern spaces.</p>
+        <!-- Wallpaper Fixing -->
+        <div class="card">
+            <img src="wallpaper.jpeg" alt="Wallpaper Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Wallpaper Fixing</h3>
+            <p>Wallpaper installation, preparation, repair, removal, and precise pattern matching for flawless results.</p>
         </div>
 
-        <div class="service-card">
-            <img src="plumbing.jpeg">
-            <h3>Plumbing Services</h3>
-            <p>Reliable plumbing & sanitary contracting solutions.</p>
+        <!-- Floor & Wall Tiling -->
+        <div class="card">
+            <img src="tiling.jpeg" alt="Floor & Wall Tiling" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Floor & Wall Tiling Works</h3>
+            <p>Ceramic tiling, natural stone tiling, mosaic tiling, porcelain tiling, glass tiling, tile repair & replacement services.</p>
         </div>
 
-        <div class="service-card">
-            <img src="electrical.jpeg">
-            <h3>Electrical Fitting</h3>
-            <p>Safe and efficient electrical installations.</p>
+        <!-- Plumbing -->
+        <div class="card">
+            <img src="plumbing.jpeg" alt="Plumbing Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Plumbing & Sanitary Contracting</h3>
+            <p>Pipe installation, fixtures & fittings, water heater installation, drainage & sewer services, toilet & bathroom renovations, leak detection, plumbing maintenance.</p>
         </div>
 
-        <div class="service-card">
-            <img src="ac.jpeg">
-            <h3>Air Conditioning</h3>
-            <p>AC, ventilation & air filtration systems.</p>
+        <!-- Electrical -->
+        <div class="card">
+            <img src="electrical.jpeg" alt="Electrical Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Electrical Fitting & Fixtures</h3>
+            <p>Lighting installation, circuit breaker installation, electrical panel upgrade, outlet & switch installation, wiring & re-routing services.</p>
         </div>
-        
-         <div class="service-card">
-            <img src="renovation.jpg">
-            <h3>Renovation</h3>
-            <p>We renovate spaces to bring them back to life.</p>
+
+        <!-- AC & Ventilation -->
+        <div class="card">
+            <img src="ac.jpeg" alt="AC & Ventilation Services" style="width:100%; border-radius:10px; margin-bottom:15px;">
+            <h3>Air Conditioning, Ventilation & Air Filtration</h3>
+            <p>AC installation, replacement, repair & maintenance, heat pump installation, and full ventilation & air filtration solutions.</p>
         </div>
-    </div>
-</div>
+    </section>
 
-<footer>
-    © 2026 DB Technical Services LLC. All rights reserved.
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 DB Technical Services LLC. All rights reserved.
+    </footer>
 
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
