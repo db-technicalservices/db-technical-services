@@ -95,6 +95,58 @@
         </a>
     </div>
 </section>
+<!-- OUR WORK SLIDER -->
+<section class="our-work">
+    <h2>Our Work</h2>
+
+    <div class="slider">
+        <button class="slide-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+        <div class="slides">
+            <img src="1.jpeg" class="slide">
+            <img src="2.jpeg" class="slide">
+            <img src="3.jpeg" class="slide">
+            <img src="4.jpeg" class="slide">
+            <img src="5.jpeg" class="slide">
+            <img src="6.jpeg" class="slide">
+            <img src="7.jpeg" class="slide">
+            <img src="8.jpeg" class="slide">
+        </div>
+
+        <button class="slide-btn right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <p class="whatsapp-text">
+        Have a project in mind or need expert technical services?
+        Our team is ready to assist you with reliable and professional solutions.
+    </p>
+
+    <a class="whatsapp-btn" href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20have%20a%20query.">
+        WhatsApp Us for Any Queries
+    </a>
+</section>
+
+<script>
+    // SIMPLE SLIDER JS
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slides .slide');
+
+    function showSlide(index) {
+        if (index >= slides.length) slideIndex = 0;
+        if (index < 0) slideIndex = slides.length - 1;
+
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[slideIndex].style.display = 'block';
+    }
+
+    function moveSlide(step) {
+        slideIndex += step;
+        showSlide(slideIndex);
+    }
+
+    // initialize first slide
+    showSlide(slideIndex);
+</script>
 
 <footer>
     <p>© 2026 DB Technical Services LLC. All Rights Reserved.</p>
