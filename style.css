@@ -571,3 +571,29 @@ footer {
         border-radius: 12px;
     }
 }
+
+/* =========================
+   OUR WORK IMAGE FIX
+========================= */
+
+/* Slider container height control */
+.slider {
+    background: #000; /* prevents white gaps */
+}
+
+/* All slides same visual size */
+.slide {
+    width: 100%;
+    height: 420px;              /* DESKTOP height */
+    object-fit: cover;          /* crops nicely, no distortion */
+    object-position: center;    /* center the crop */
+    display: none;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .slide {
+        height: 260px;          /* MOBILE height */
+        border-radius: 12px;
+    }
+}
