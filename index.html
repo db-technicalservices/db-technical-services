@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DB Technical Services LLC</title>
+
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
     <nav class="navbar">
         <div class="logo">DB Technical Services LLC</div>
@@ -27,7 +29,7 @@
     </nav>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section class="hero">
     <div class="hero-text">
         <h1>Welcome to DB Technical Services LLC</h1>
@@ -36,14 +38,13 @@
             and a commitment to quality across residential, commercial,
             and industrial projects.
         </p>
-
         <p class="hero-statement">
             Exceptional Services. Trusted Expertise. Reliable Results.
         </p>
     </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 <section class="about">
     <h2>About Us</h2>
     <p>
@@ -54,7 +55,7 @@
     </p>
 </section>
 
-<!-- SERVICES PREVIEW -->
+<!-- ================= SERVICES PREVIEW ================= -->
 <section class="services-preview">
     <h2>Our Services</h2>
 
@@ -64,27 +65,33 @@
     </p>
 
     <div class="services-grid">
+
         <div class="service-card">
+            <img src="carpenter.jpeg" alt="Carpentry Services">
             <h3>Carpentry & Flooring</h3>
             <p>Custom furniture, cabinetry, partitions, and flooring solutions.</p>
         </div>
 
         <div class="service-card">
+            <img src="painter.jpeg" alt="Painting Services">
             <h3>Painting Contracting</h3>
             <p>Interior and exterior painting with premium finishes.</p>
         </div>
 
         <div class="service-card">
+            <img src="plumber.jpeg" alt="Plumbing Services">
             <h3>Plumbing & Sanitary</h3>
             <p>Complete plumbing installations and maintenance services.</p>
         </div>
 
         <div class="service-card">
+            <img src="electrics.jpeg" alt="Electrical Services">
             <h3>Electrical Services</h3>
             <p>Lighting, wiring, fittings, and panel upgrades.</p>
         </div>
 
         <div class="service-card">
+            <img src="ventilator.jpeg" alt="AC & Ventilation">
             <h3>AC & Ventilation</h3>
             <p>Air conditioning, ventilation, and air filtration systems.</p>
         </div>
@@ -93,9 +100,11 @@
             <h3>View All Services</h3>
             <p>Explore our complete range of technical solutions.</p>
         </a>
+
     </div>
 </section>
-<!-- OUR WORK SLIDER -->
+
+<!-- ================= OUR WORK ================= -->
 <section class="our-work">
     <h2>Our Work</h2>
 
@@ -121,13 +130,23 @@
         Our team is ready to assist you with reliable and professional solutions.
     </p>
 
-    <a class="whatsapp-btn" href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20have%20a%20query.">
+    <a class="whatsapp-btn"
+       href="https://wa.me/971569068683?text=Hello%20DB%20Technical%20Services,%20I%20have%20a%20query.">
         WhatsApp Us for Any Queries
     </a>
 </section>
 
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© DB Technical Services LLC. All Rights Reserved.</p>
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
 <script>
-    // SIMPLE SLIDER JS
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+    }
+
     let slideIndex = 0;
     const slides = document.querySelectorAll('.slides .slide');
 
@@ -144,18 +163,7 @@
         showSlide(slideIndex);
     }
 
-    // initialize first slide
     showSlide(slideIndex);
-</script>
-
-<footer>
-    <p>© DB Technical Services LLC. All Rights Reserved.</p>
-</footer>
-
-<script>
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-}
 </script>
 
 </body>
