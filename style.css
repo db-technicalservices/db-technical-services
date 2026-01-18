@@ -598,16 +598,25 @@ footer {
     }
 }
 /* =========================
-   FOOTER LINK COLOR FIX
+   GLOBAL LINK FIX
 ========================= */
 
-.site-footer a,
-.site-footer a:visited {
-    color: #ffffff;
+/* Remove ugly default link styles */
+a {
+    color: inherit;
     text-decoration: none;
 }
 
-.site-footer a:hover {
-    text-decoration: underline;
-    opacity: 0.9;
+/* Improve visibility for contact info links */
+a[href^="tel"],
+a[href^="mailto"],
+a[href*="instagram"],
+a[href*="wa.me"] {
+    color: #0047ab;
+    font-weight: 600;
+}
+
+/* Hover effect (clean, not loud) */
+a:hover {
+    opacity: 0.85;
 }
