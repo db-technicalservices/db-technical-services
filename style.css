@@ -597,3 +597,17 @@ footer {
         border-radius: 12px;
     }
 }
+/* =========================
+   FOOTER LINK COLOR FIX
+========================= */
+
+.site-footer a,
+.site-footer a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
