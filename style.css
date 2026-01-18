@@ -612,7 +612,7 @@ a[href^="tel"],
 a[href^="mailto"],
 a[href*="instagram"],
 a[href*="wa.me"] {
-    color: #0047ab;
+    color: #ffffff;
     font-weight: 600;
 }
 
